@@ -33,7 +33,7 @@ class MatrizDadosController{
 				if(isset($linha[0])) $this->montarQuery($linha);
 			endif;
 
-			if($qtd_registros == 50 || feof($arquivo)):
+			if($qtd_registros == 100 || feof($arquivo)):
 				$qtd_registros = 0;
 				$this->SalvarParticipante();
 			endif;
